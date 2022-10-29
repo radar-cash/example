@@ -9,10 +9,18 @@ async function start() {
         token: 'ask me t.me/glebpw',
     })
 
+    // текущие данные, обновляется часто
     const pulses = nc.subscribe("flow.pulses");
+
+    // коофиценты, обновляется раз в минуту
     const daily = nc.subscribe("flow.daily");
-    const quotes = nc.subscribe("flow.quotes");
-    const markets = nc.subscribe("flow.markets");
+
+    // инфа по койнам (название и прочее), обновляется раз/два в сутки
+    // const quotes = nc.subscribe("flow.quotes");
+
+    // инфа кто где торгуется, обновляется с фиксированной скоростью проходя по всем койнам,
+    // полный цикл от несольких дней
+    // const markets = nc.subscribe("flow.markets");
 
     async function printMsgs(s) {
         let subj = s.getSubject();
@@ -29,8 +37,6 @@ async function start() {
 
     printMsgs(pulses);
     printMsgs(daily);
-    printMsgs(quotes);
-    printMsgs(markets);
 
 }
 
