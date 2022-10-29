@@ -1,0 +1,13 @@
+{
+  "name": "ranats",
+  "scripts": {
+    "start": "sky up src",
+    "box": "sky box src dist"
+  },
+  "devDependencies": {
+    "skyup": "0.0.5"
+  },
+  "dependencies": {
+    "nats": "^2.8.0"
+  }
+}

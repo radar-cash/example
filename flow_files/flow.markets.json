@@ -1,0 +1,38 @@
+{
+  "id": 15634,
+  "markets": [
+    {
+      "id": 302,
+      "name": "Gate.io",
+      "slug": "gate-io",
+      "pairs": [
+        {
+          "pair": "ASW/USDT",
+          "url": "https://gate.io/trade/asw_usdt"
+        }
+      ]
+    },
+    {
+      "id": 791,
+      "name": "ZT",
+      "slug": "zt",
+      "pairs": [
+        {
+          "pair": "ASW/USDT",
+          "url": "https://www.ztb.im/exchange?coin=ASW_USDT"
+        }
+      ]
+    },
+    {
+      "id": 1069,
+      "name": "Uniswap (V2)",
+      "slug": "uniswap-v2",
+      "pairs": [
+        {
+          "pair": "ASW/USDT",
+          "url": "https://app.uniswap.org/#/swap"
+        }
+      ]
+    }
+  ]
+}
